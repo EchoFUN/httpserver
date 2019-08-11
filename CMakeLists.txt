@@ -1,28 +1,13 @@
-cmake_minimum_required(VERSION 3.14)
-project(httpserver)
+cmake_minimum_required(VERSION 3.5.2)
+project(httpserver CXX)
 
-#[[
+set(CMAKE_CXX_STANDARD 14)
 
-SRCEXT := cpp
-SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))
-OBJECTS := $(patsubst $(SRCDIR)/%,$(BUILDDIR)/%,$(SOURCES:.$(SRCEXT)=.o))
-
-$(TARGET): $(OBJECTS)
-	@echo " Linking..."; $(CC) $^ $(LINK) -o $(BINDIR)/$(TARGET)
-
-$(BUILDDIR)/%.o: $(SRCDIR)/%.$(SRCEXT)
-	@mkdir -p $(BUILDDIR)
-	@echo " CC $<"; $(CC) $(CFLAGS) -c -o $@ $<
-
-clean:
-	@echo " Cleaning..."; rm -r $(BUILDDIR) $(BINDIR)/$(TARGET)*
-
-.PHONY: clean
-]]
 
 set(CC "g++")
 set(SRCDIR "src")
 set(BINDIR "bin")
+set(BUILDDIR "build")
 set(TARGET "httpserver")
 
 # CMAKE_SYSTEM_NAME equals $(shell name)
@@ -36,14 +21,16 @@ set(PRODFLAGS "-Wall -O2 -fstack-check -fstack-protector-all")
 set(CFLAGS "-std=c++14 -Iinclude/ ${PRODFLAGS}")
 set(LINK ${PRODFLAGS})
 
+include_directories(${SRCDIR})
 set(SRCEXT "cpp")
-set(SOURCES find_file())
-set(OBJECTS "")
+
+file(GLOB SOURCES ${SRCDIR}/*.${SRCEXT})
+file(MAKE_DIRECTORY ${BUILDDIR})
 
 
 
 
+# set(OBJECTS "")
 
-set(CMAKE_CXX_STANDARD 14)
 
-add_executable(httpserver src/main.cpp)
+add_executable(httpserver ${SOURCES})

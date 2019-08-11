@@ -25,7 +25,7 @@
 #include "HTTPServer.h"
 #include "ResourceHost.h"
 
-static HTTPServer* svr;
+static HTTPServer *svr;
 
 // Ignore signals with this function
 void handleSigPipe(int snum) {
@@ -34,77 +34,76 @@ void handleSigPipe(int snum) {
 
 // Termination signal handler (Ctrl-C)
 void handleTermSig(int snum) {
-	svr->canRun = false;
+    svr->canRun = false;
 }
 
-int main (int argc, const char * argv[])
-{
-	// Parse config file
-	std::map<std::string, std::string> config;
-	std::fstream cfile;
-	std::string line, key, val;
-	int epos;
-	cfile.open("server.config");
-	if (!cfile.is_open()) {
-		std::cout << "Unable to open server.config file in working directory" << std::endl;
-		return -1;
-	}
-	while (getline(cfile, line)) {
-		// Skip lines beginning with a #
-		if (line.rfind("#", 0) == 0)
-			continue;
+int main(int argc, const char *argv[]) {
+    // Parse config file
+    std::map<std::string, std::string> config;
+    std::fstream cfile;
+    std::string line, key, val;
+    int epos;
+    cfile.open("server.config");
+    if (!cfile.is_open()) {
+        std::cout << "Unable to open server.config file in working directory" << std::endl;
+        return -1;
+    }
+    while (getline(cfile, line)) {
+        // Skip lines beginning with a #
+        if (line.rfind("#", 0) == 0)
+            continue;
 
-		epos = line.find("=");
-		key = line.substr(0, epos);
-		val = line.substr(epos+1, line.length());
-		config.insert(std::pair<std::string, std::string> (key, val));
-	}
-	cfile.close();
+        epos = line.find("=");
+        key = line.substr(0, epos);
+        val = line.substr(epos + 1, line.length());
+        config.insert(std::pair<std::string, std::string>(key, val));
+    }
+    cfile.close();
 
-	// Validate at least vhost, port, and diskpath are present
-	auto it_vhost = config.find("vhost");
-	auto it_port = config.find("port");
-	auto it_path = config.find("diskpath");
-	if (it_vhost == config.end() || it_port == config.end() || it_path == config.end()) {
-		std::cout << "vhost, port, and diskpath must be supplied in the config, at a minimum" << std::endl;
-		return -1;
-	}
+    // Validate at least vhost, port, and diskpath are present
+    auto it_vhost = config.find("vhost");
+    auto it_port = config.find("port");
+    auto it_path = config.find("diskpath");
+    if (it_vhost == config.end() || it_port == config.end() || it_path == config.end()) {
+        std::cout << "vhost, port, and diskpath must be supplied in the config, at a minimum" << std::endl;
+        return -1;
+    }
 
-	// Break vhost into a comma separated list (if there are multiple vhost aliases)
-	std::vector<std::string> vhosts;
-	std::string vhost_alias_str = config["vhost"];
-	std::string delimiter = ",";
-	std::string token;
-	size_t pos = vhost_alias_str.find(delimiter);
-	do {
-		pos = vhost_alias_str.find(delimiter);
-		token = vhost_alias_str.substr(0, pos);
-		vhosts.push_back(token);
-		vhost_alias_str.erase(0, pos+delimiter.length());
-	} while (pos != std::string::npos);
+    // Break vhost into a comma separated list (if there are multiple vhost aliases)
+    std::vector<std::string> vhosts;
+    std::string vhost_alias_str = config["vhost"];
+    std::string delimiter = ",";
+    std::string token;
+    size_t pos = vhost_alias_str.find(delimiter);
+    do {
+        pos = vhost_alias_str.find(delimiter);
+        token = vhost_alias_str.substr(0, pos);
+        vhosts.push_back(token);
+        vhost_alias_str.erase(0, pos + delimiter.length());
+    } while (pos != std::string::npos);
 
     // Ignore SIGPIPE "Broken pipe" signals when socket connections are broken.
     signal(SIGPIPE, handleSigPipe);
 
-	// Register termination signals
-	signal(SIGABRT, &handleTermSig);
-	signal(SIGINT, &handleTermSig);
-	signal(SIGTERM, &handleTermSig);
+    // Register termination signals
+    signal(SIGABRT, &handleTermSig);
+    signal(SIGINT, &handleTermSig);
+    signal(SIGTERM, &handleTermSig);
 
     // Instance and start the server
-	svr = new HTTPServer(vhosts, atoi(config["port"].c_str()), config["diskpath"]);
-	if (!svr->start()) {
-		svr->stop();
-		delete svr;
-		return -1;
-	}
+    svr = new HTTPServer(vhosts, atoi(config["port"].c_str()), config["diskpath"]);
+    if (!svr->start()) {
+        svr->stop();
+        delete svr;
+        return -1;
+    }
 
-	// Run main event loop
-	svr->process();
-	
-	// Stop the server
-	svr->stop();
-	delete svr;
-    
+    // Run main event loop
+    svr->process();
+
+    // Stop the server
+    svr->stop();
+    delete svr;
+
     return 0;
 }

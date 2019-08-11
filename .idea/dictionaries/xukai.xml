@@ -1,14 +1,37 @@
 <component name="ProjectDictionaryState">
   <dictionary name="xukai">
     <words>
+      <w>bindir</w>
+      <w>builddir</w>
+      <w>cfile</w>
+      <w>cout</w>
       <w>debugflags</w>
       <w>delim</w>
+      <w>diskpath</w>
+      <w>endl</w>
+      <w>epos</w>
+      <w>fmudflap</w>
+      <w>fstack</w>
+      <w>htdocs</w>
+      <w>httpserver</w>
+      <w>ifeq</w>
+      <w>iinclude</w>
+      <w>kevent</w>
       <w>kqueue</w>
+      <w>lkqueue</w>
+      <w>lpthread</w>
+      <w>mydomain</w>
+      <w>patsubst</w>
       <w>prodflags</w>
       <w>sline</w>
+      <w>srcdir</w>
       <w>srcext</w>
       <w>statusstr</w>
+      <w>theres</w>
       <w>tmpstr</w>
+      <w>uname</w>
+      <w>vhost</w>
+      <w>vhosts</w>
     </words>
   </dictionary>
 </component>

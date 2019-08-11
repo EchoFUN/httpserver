@@ -94,6 +94,7 @@ public:
 
 	// Main event loop
 	void process();
+
 };
 
 #endif

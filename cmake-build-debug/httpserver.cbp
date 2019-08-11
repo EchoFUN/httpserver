@@ -44,6 +44,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/xukai/Documents/workspace/httpserver/src"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include"/>
@@ -65,6 +66,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/xukai/Documents/workspace/httpserver/src"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.1/include"/>
@@ -80,6 +82,54 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/xukai/Documents/workspace/httpserver/src/ByteBuffer.cpp">
+			<Option target="httpserver"/>
+		</Unit>
+		<Unit filename="/Users/xukai/Documents/workspace/httpserver/src/ByteBuffer.h">
+			<Option target="httpserver"/>
+		</Unit>
+		<Unit filename="/Users/xukai/Documents/workspace/httpserver/src/Client.cpp">
+			<Option target="httpserver"/>
+		</Unit>
+		<Unit filename="/Users/xukai/Documents/workspace/httpserver/src/Client.h">
+			<Option target="httpserver"/>
+		</Unit>
+		<Unit filename="/Users/xukai/Documents/workspace/httpserver/src/HTTPMessage.cpp">
+			<Option target="httpserver"/>
+		</Unit>
+		<Unit filename="/Users/xukai/Documents/workspace/httpserver/src/HTTPMessage.h">
+			<Option target="httpserver"/>
+		</Unit>
+		<Unit filename="/Users/xukai/Documents/workspace/httpserver/src/HTTPRequest.cpp">
+			<Option target="httpserver"/>
+		</Unit>
+		<Unit filename="/Users/xukai/Documents/workspace/httpserver/src/HTTPRequest.h">
+			<Option target="httpserver"/>
+		</Unit>
+		<Unit filename="/Users/xukai/Documents/workspace/httpserver/src/HTTPResponse.cpp">
+			<Option target="httpserver"/>
+		</Unit>
+		<Unit filename="/Users/xukai/Documents/workspace/httpserver/src/HTTPResponse.h">
+			<Option target="httpserver"/>
+		</Unit>
+		<Unit filename="/Users/xukai/Documents/workspace/httpserver/src/HTTPServer.cpp">
+			<Option target="httpserver"/>
+		</Unit>
+		<Unit filename="/Users/xukai/Documents/workspace/httpserver/src/HTTPServer.h">
+			<Option target="httpserver"/>
+		</Unit>
+		<Unit filename="/Users/xukai/Documents/workspace/httpserver/src/Resource.cpp">
+			<Option target="httpserver"/>
+		</Unit>
+		<Unit filename="/Users/xukai/Documents/workspace/httpserver/src/Resource.h">
+			<Option target="httpserver"/>
+		</Unit>
+		<Unit filename="/Users/xukai/Documents/workspace/httpserver/src/ResourceHost.cpp">
+			<Option target="httpserver"/>
+		</Unit>
+		<Unit filename="/Users/xukai/Documents/workspace/httpserver/src/ResourceHost.h">
+			<Option target="httpserver"/>
+		</Unit>
 		<Unit filename="/Users/xukai/Documents/workspace/httpserver/src/main.cpp">
 			<Option target="httpserver"/>
 		</Unit>

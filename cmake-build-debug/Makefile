@@ -123,6 +123,222 @@ httpserver/fast:
 	$(MAKE) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/build
 .PHONY : httpserver/fast
 
+src/ByteBuffer.o: src/ByteBuffer.cpp.o
+
+.PHONY : src/ByteBuffer.o
+
+# target to build an object file
+src/ByteBuffer.cpp.o:
+	$(MAKE) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/ByteBuffer.cpp.o
+.PHONY : src/ByteBuffer.cpp.o
+
+src/ByteBuffer.i: src/ByteBuffer.cpp.i
+
+.PHONY : src/ByteBuffer.i
+
+# target to preprocess a source file
+src/ByteBuffer.cpp.i:
+	$(MAKE) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/ByteBuffer.cpp.i
+.PHONY : src/ByteBuffer.cpp.i
+
+src/ByteBuffer.s: src/ByteBuffer.cpp.s
+
+.PHONY : src/ByteBuffer.s
+
+# target to generate assembly for a file
+src/ByteBuffer.cpp.s:
+	$(MAKE) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/ByteBuffer.cpp.s
+.PHONY : src/ByteBuffer.cpp.s
+
+src/Client.o: src/Client.cpp.o
+
+.PHONY : src/Client.o
+
+# target to build an object file
+src/Client.cpp.o:
+	$(MAKE) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/Client.cpp.o
+.PHONY : src/Client.cpp.o
+
+src/Client.i: src/Client.cpp.i
+
+.PHONY : src/Client.i
+
+# target to preprocess a source file
+src/Client.cpp.i:
+	$(MAKE) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/Client.cpp.i
+.PHONY : src/Client.cpp.i
+
+src/Client.s: src/Client.cpp.s
+
+.PHONY : src/Client.s
+
+# target to generate assembly for a file
+src/Client.cpp.s:
+	$(MAKE) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/Client.cpp.s
+.PHONY : src/Client.cpp.s
+
+src/HTTPMessage.o: src/HTTPMessage.cpp.o
+
+.PHONY : src/HTTPMessage.o
+
+# target to build an object file
+src/HTTPMessage.cpp.o:
+	$(MAKE) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/HTTPMessage.cpp.o
+.PHONY : src/HTTPMessage.cpp.o
+
+src/HTTPMessage.i: src/HTTPMessage.cpp.i
+
+.PHONY : src/HTTPMessage.i
+
+# target to preprocess a source file
+src/HTTPMessage.cpp.i:
+	$(MAKE) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/HTTPMessage.cpp.i
+.PHONY : src/HTTPMessage.cpp.i
+
+src/HTTPMessage.s: src/HTTPMessage.cpp.s
+
+.PHONY : src/HTTPMessage.s
+
+# target to generate assembly for a file
+src/HTTPMessage.cpp.s:
+	$(MAKE) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/HTTPMessage.cpp.s
+.PHONY : src/HTTPMessage.cpp.s
+
+src/HTTPRequest.o: src/HTTPRequest.cpp.o
+
+.PHONY : src/HTTPRequest.o
+
+# target to build an object file
+src/HTTPRequest.cpp.o:
+	$(MAKE) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/HTTPRequest.cpp.o
+.PHONY : src/HTTPRequest.cpp.o
+
+src/HTTPRequest.i: src/HTTPRequest.cpp.i
+
+.PHONY : src/HTTPRequest.i
+
+# target to preprocess a source file
+src/HTTPRequest.cpp.i:
+	$(MAKE) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/HTTPRequest.cpp.i
+.PHONY : src/HTTPRequest.cpp.i
+
+src/HTTPRequest.s: src/HTTPRequest.cpp.s
+
+.PHONY : src/HTTPRequest.s
+
+# target to generate assembly for a file
+src/HTTPRequest.cpp.s:
+	$(MAKE) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/HTTPRequest.cpp.s
+.PHONY : src/HTTPRequest.cpp.s
+
+src/HTTPResponse.o: src/HTTPResponse.cpp.o
+
+.PHONY : src/HTTPResponse.o
+
+# target to build an object file
+src/HTTPResponse.cpp.o:
+	$(MAKE) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/HTTPResponse.cpp.o
+.PHONY : src/HTTPResponse.cpp.o
+
+src/HTTPResponse.i: src/HTTPResponse.cpp.i
+
+.PHONY : src/HTTPResponse.i
+
+# target to preprocess a source file
+src/HTTPResponse.cpp.i:
+	$(MAKE) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/HTTPResponse.cpp.i
+.PHONY : src/HTTPResponse.cpp.i
+
+src/HTTPResponse.s: src/HTTPResponse.cpp.s
+
+.PHONY : src/HTTPResponse.s
+
+# target to generate assembly for a file
+src/HTTPResponse.cpp.s:
+	$(MAKE) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/HTTPResponse.cpp.s
+.PHONY : src/HTTPResponse.cpp.s
+
+src/HTTPServer.o: src/HTTPServer.cpp.o
+
+.PHONY : src/HTTPServer.o
+
+# target to build an object file
+src/HTTPServer.cpp.o:
+	$(MAKE) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/HTTPServer.cpp.o
+.PHONY : src/HTTPServer.cpp.o
+
+src/HTTPServer.i: src/HTTPServer.cpp.i
+
+.PHONY : src/HTTPServer.i
+
+# target to preprocess a source file
+src/HTTPServer.cpp.i:
+	$(MAKE) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/HTTPServer.cpp.i
+.PHONY : src/HTTPServer.cpp.i
+
+src/HTTPServer.s: src/HTTPServer.cpp.s
+
+.PHONY : src/HTTPServer.s
+
+# target to generate assembly for a file
+src/HTTPServer.cpp.s:
+	$(MAKE) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/HTTPServer.cpp.s
+.PHONY : src/HTTPServer.cpp.s
+
+src/Resource.o: src/Resource.cpp.o
+
+.PHONY : src/Resource.o
+
+# target to build an object file
+src/Resource.cpp.o:
+	$(MAKE) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/Resource.cpp.o
+.PHONY : src/Resource.cpp.o
+
+src/Resource.i: src/Resource.cpp.i
+
+.PHONY : src/Resource.i
+
+# target to preprocess a source file
+src/Resource.cpp.i:
+	$(MAKE) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/Resource.cpp.i
+.PHONY : src/Resource.cpp.i
+
+src/Resource.s: src/Resource.cpp.s
+
+.PHONY : src/Resource.s
+
+# target to generate assembly for a file
+src/Resource.cpp.s:
+	$(MAKE) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/Resource.cpp.s
+.PHONY : src/Resource.cpp.s
+
+src/ResourceHost.o: src/ResourceHost.cpp.o
+
+.PHONY : src/ResourceHost.o
+
+# target to build an object file
+src/ResourceHost.cpp.o:
+	$(MAKE) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/ResourceHost.cpp.o
+.PHONY : src/ResourceHost.cpp.o
+
+src/ResourceHost.i: src/ResourceHost.cpp.i
+
+.PHONY : src/ResourceHost.i
+
+# target to preprocess a source file
+src/ResourceHost.cpp.i:
+	$(MAKE) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/ResourceHost.cpp.i
+.PHONY : src/ResourceHost.cpp.i
+
+src/ResourceHost.s: src/ResourceHost.cpp.s
+
+.PHONY : src/ResourceHost.s
+
+# target to generate assembly for a file
+src/ResourceHost.cpp.s:
+	$(MAKE) -f CMakeFiles/httpserver.dir/build.make CMakeFiles/httpserver.dir/src/ResourceHost.cpp.s
+.PHONY : src/ResourceHost.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -159,6 +375,30 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... httpserver"
+	@echo "... src/ByteBuffer.o"
+	@echo "... src/ByteBuffer.i"
+	@echo "... src/ByteBuffer.s"
+	@echo "... src/Client.o"
+	@echo "... src/Client.i"
+	@echo "... src/Client.s"
+	@echo "... src/HTTPMessage.o"
+	@echo "... src/HTTPMessage.i"
+	@echo "... src/HTTPMessage.s"
+	@echo "... src/HTTPRequest.o"
+	@echo "... src/HTTPRequest.i"
+	@echo "... src/HTTPRequest.s"
+	@echo "... src/HTTPResponse.o"
+	@echo "... src/HTTPResponse.i"
+	@echo "... src/HTTPResponse.s"
+	@echo "... src/HTTPServer.o"
+	@echo "... src/HTTPServer.i"
+	@echo "... src/HTTPServer.s"
+	@echo "... src/Resource.o"
+	@echo "... src/Resource.i"
+	@echo "... src/Resource.s"
+	@echo "... src/ResourceHost.o"
+	@echo "... src/ResourceHost.i"
+	@echo "... src/ResourceHost.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

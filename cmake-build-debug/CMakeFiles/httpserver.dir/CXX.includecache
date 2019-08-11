@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/Users/xukai/Documents/workspace/httpserver/src/ByteBuffer.cpp
+ByteBuffer.h
+/Users/xukai/Documents/workspace/httpserver/src/ByteBuffer.h
+
 /Users/xukai/Documents/workspace/httpserver/src/ByteBuffer.h
 cstdlib
 -
@@ -18,6 +22,10 @@ iostream
 stdio.h
 -
 
+/Users/xukai/Documents/workspace/httpserver/src/Client.cpp
+Client.h
+/Users/xukai/Documents/workspace/httpserver/src/Client.h
+
 /Users/xukai/Documents/workspace/httpserver/src/Client.h
 netinet/in.h
 -
@@ -27,6 +35,10 @@ queue
 -
 SendQueueItem.h
 /Users/xukai/Documents/workspace/httpserver/src/SendQueueItem.h
+
+/Users/xukai/Documents/workspace/httpserver/src/HTTPMessage.cpp
+HTTPMessage.h
+/Users/xukai/Documents/workspace/httpserver/src/HTTPMessage.h
 
 /Users/xukai/Documents/workspace/httpserver/src/HTTPMessage.h
 map
@@ -38,13 +50,29 @@ sstream
 ByteBuffer.h
 /Users/xukai/Documents/workspace/httpserver/src/ByteBuffer.h
 
+/Users/xukai/Documents/workspace/httpserver/src/HTTPRequest.cpp
+HTTPMessage.h
+/Users/xukai/Documents/workspace/httpserver/src/HTTPMessage.h
+HTTPRequest.h
+/Users/xukai/Documents/workspace/httpserver/src/HTTPRequest.h
+
 /Users/xukai/Documents/workspace/httpserver/src/HTTPRequest.h
 HTTPMessage.h
 /Users/xukai/Documents/workspace/httpserver/src/HTTPMessage.h
 
+/Users/xukai/Documents/workspace/httpserver/src/HTTPResponse.cpp
+HTTPMessage.h
+/Users/xukai/Documents/workspace/httpserver/src/HTTPMessage.h
+HTTPResponse.h
+/Users/xukai/Documents/workspace/httpserver/src/HTTPResponse.h
+
 /Users/xukai/Documents/workspace/httpserver/src/HTTPResponse.h
 HTTPMessage.h
 /Users/xukai/Documents/workspace/httpserver/src/HTTPMessage.h
+
+/Users/xukai/Documents/workspace/httpserver/src/HTTPServer.cpp
+HTTPServer.h
+/Users/xukai/Documents/workspace/httpserver/src/HTTPServer.h
 
 /Users/xukai/Documents/workspace/httpserver/src/HTTPServer.h
 unordered_map
@@ -84,9 +112,17 @@ ResourceHost.h
 
 /Users/xukai/Documents/workspace/httpserver/src/MimeTypes.inc
 
+/Users/xukai/Documents/workspace/httpserver/src/Resource.cpp
+Resource.h
+/Users/xukai/Documents/workspace/httpserver/src/Resource.h
+
 /Users/xukai/Documents/workspace/httpserver/src/Resource.h
 string
 -
+
+/Users/xukai/Documents/workspace/httpserver/src/ResourceHost.cpp
+ResourceHost.h
+/Users/xukai/Documents/workspace/httpserver/src/ResourceHost.h
 
 /Users/xukai/Documents/workspace/httpserver/src/ResourceHost.h
 iostream
