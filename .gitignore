@@ -1,6 +1,10 @@
 bin/httpserver
 build/
 
+cmake-build-debug
 cmake-build-debug/
 cmake-build-debug/*
+
+.idea
+.idea/
 .idea/*
