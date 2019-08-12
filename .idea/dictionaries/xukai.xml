@@ -8,15 +8,15 @@
       <w>debugflags</w>
       <w>delim</w>
       <w>diskpath</w>
-      <w>endl</w>
       <w>epos</w>
       <w>fmudflap</w>
       <w>fstack</w>
       <w>htdocs</w>
+      <w>httpmessage</w>
       <w>httpserver</w>
       <w>ifeq</w>
       <w>iinclude</w>
-      <w>kevent</w>
+      <w>kqfd</w>
       <w>kqueue</w>
       <w>lkqueue</w>
       <w>lpthread</w>
